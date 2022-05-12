@@ -5,12 +5,13 @@ share: True
 Title: The Classical Theory of Field
 Type: Book
 Status: Reading
-Author: [Landau L.D., Lifshitz E.M.]
+Author: 
+- Landau L.D.
+- Lifshitz E.M.
 Stars: ⭐⭐⭐⭐
 url: 
 tags: 
 ---
-
 # Chapter 2 Relativistic Mechanics
 
 ## The Principle of Least Action
@@ -21,7 +22,7 @@ Consider a free particle: the action of a free particle must not depend on the f
 $$ S = -\alpha \int_a^b ds $$
 where the integral is along the world line and $a$ and $b$ are two given world points, $\alpha$ is some constant that characterizes the particle.
 
-> [!TIP] As we can see in § 3, $\int_a^bds$ has a maximum along a straight line, so the constant $\alpha$ must be positive.
+!!! TIP "As we can see in § 3, $\int_a^bds$ has a maximum along a straight line, so the constant $\alpha$ must be positive."
 
 ***The action of a free particle has a maximum when the integral path is a straight line between the two given world points.*** So we can say the world line of a free particle is a straight line in spacetime.
 
@@ -49,8 +50,8 @@ L = -mc^2 \sqrt{1-\frac{v^2}{c^2}}.
 $$
 
 ## Energy and Momentum
-> [!note] Def: Momentum of a particle
-> $$\mathbf{p} = \frac{\partial L}{\partial \mathbf{v}}$$
+!!! note "Def: Momentum of a particle"
+	$$\mathbf{p} = \frac{\partial L}{\partial \mathbf{v}}$$
 
 Using the Lagrangian of a free particle, we find
 $$
@@ -59,11 +60,11 @@ $$
 
 ^9cc1a8
 
->[!note] Def: Force acting on the particle
->$$\mathbf{F} = \frac{d\mathbf{p}}{dt}$$
+!!! note "Def: Force acting on the particle"
+	$$\mathbf{F} = \frac{d\mathbf{p}}{dt}$$
 
->[!note] Def: Energy of the particle
->$$\mathscr{E} = \mathbf{p}\cdot\mathbf{v} - L$$
+!!! note "Def: Energy of the particle"
+	$$\mathscr{E} = \mathbf{p}\cdot\mathbf{v} - L$$
 
 Also using the Lagrangian of a free particle, we have
 $$
@@ -77,11 +78,11 @@ $$
 \mathscr{E} \approx mc^2\left(1-\frac{1}{2}(-\frac{v^2}{c^2})\right)
 = mc^2 + \frac{1}{2}mv^2
 $$
->[!tip] This means the total energy is the kinetic energy plus the static energy.
+!!! tip "This means the total energy is the kinetic energy plus the static energy."
 
 Although we speak of a "particle", we haven't used the property that it is "elementary". Thus **the formulas are equally applicable to any composite body consisting of many particles**, where by $m$ we mean the total mass of the body, and by $v$ the velocity of its motion as a whole.
->[!attention]
->$\sum{m_\alpha c^2} \neq mc^2$ for the energy $mc^2$ contains both the kinetic energy of the particles and their interaction energy.
+!!! attention
+	$\sum{m_\alpha c^2} \neq mc^2$ for the energy $mc^2$ contains both the kinetic energy of the particles and their interaction energy.
 
 Squaring the [[CTF#^2539ba|energy]] and the [[CTF#^9cc1a8|momentum]] we can get:
 $$
@@ -89,6 +90,5 @@ $$
 = p^2 + m^2 c^2.
 $$
 
->[!note] Def: Hamiltonian function $\mathscr{H}$
->The energy written in terms of the momentum, which in this case is $$\mathscr{H} = c\sqrt{p^2 + m^2 c^2}$$
-
+!!! note "Def: Hamiltonian function $\mathscr{H}$"
+	The energy written in terms of the momentum, which in this case is $$\mathscr{H} = c\sqrt{p^2 + m^2 c^2}$$
