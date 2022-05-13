@@ -19,7 +19,7 @@ tags:
  For each mechanical system, there exists a certain integral $S$ called $action$, which has a minimum(or extremum) for the actual motion so that its variation $\delta S$ is zero.
 
 Consider a free particle: the action of a free particle must not depend on the frame of reference → the action must be Lorentz invariant—that is a scalar → the integrand must be a differential of the first order → the action of a free particle must have the form
-$$ S = -\alpha \int_a^b ds $$
+$$S = -\alpha \int_a^b ds$$
 where the integral is along the world line and $a$ and $b$ are two given world points, $\alpha$ is some constant that characterizes the particle.
 
 !!! TIP "As we can see in § 3, $\int_a^bds$ has a maximum along a straight line, so the constant $\alpha$ must be positive."
