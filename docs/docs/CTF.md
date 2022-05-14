@@ -108,7 +108,7 @@ For $v=c$, the relation becomes ${p}=\frac{\mathscr{E}}{c}$.
 The interval is 
 $$ds = \sqrt{dx_i dx^i}$$
 so the variation of the $ds$ is
-$$\delta(ds) = \frac{ds}{dx^i} \delta(dx^i) = \frac{dx_i + \delta_{ij}dx^j}{2ds}\delta(dx^i) = \frac{dx_i}{ds}\delta(dx^i).$$
+$$\delta(ds) = \frac{\partial(ds)}{\partial(dx^i)} \delta(dx^i) = \frac{dx_i + \delta_{ij}dx^j}{2ds}\delta(dx^i) = \frac{dx_i}{ds}\delta(dx^i).$$
 
 According to the principle of least action, $\delta S$ must be zero. So we have
 $$\delta S = -mc\,\delta\int_{a}^{b}\sqrt{dx_i dx^i} = -mc\int_{a}^{b}\frac{dx_i}{ds}\delta(dx^i) = -mc\int_{a}^{b}u_{i}d\delta x^i = 0$$
@@ -140,7 +140,7 @@ $$g^i = \frac{p^i}{ds} = mc \frac{du^i}{ds}.$$
 !!! note "formulas in 4-dimensional form"
 	- interval 
 	 $$ds = \sqrt{dx_i dx^i}$$
-	 $$\delta(ds) = \frac{ds}{dx^i} \delta(dx^i) = \frac{dx_i + \delta_{ij}dx^j}{2ds}\delta(dx^i) = \frac{dx_i}{ds}\delta(dx^i)$$
+	 $$\delta(ds) = \frac{\partial(ds)}{\partial(dx^i)} \delta(dx^i) = \frac{dx_i + \delta_{ij}dx^j}{2ds}\delta(dx^i) = \frac{dx_i}{ds}\delta(dx^i)$$
 	- principle of least action 
 	 $$\delta S = -mc\,\delta\int_{a}^{b}\sqrt{dx_i dx^i} = -mc\int_{a}^{b}\frac{dx_i}{ds}\delta(dx^i) = -mc\int_{a}^{b}u_{i}d\delta x^i = 0$$
 	 $$\Rightarrow \delta S = -mcu_i \delta x^i\Big{|}_a^b + mc\int_a^b \delta x^i \frac{du_i}{ds}ds = 0$$
@@ -160,4 +160,56 @@ $$g^i = \frac{p^i}{ds} = mc \frac{du^i}{ds}.$$
 ## Transformation of Distribution Functions
 
 !!! tip "Aim: Find the transformation law of distribution function $f(\mathbf{p})$."
-	The $\mathbf{p}$ is a 3-vector and the *volume element* $dp_x dp_y dp_z$ is
+
+
+
+
+---
+## Differential Form
+!!! note "Def: *l-form*"
+	$\omega_{a_1\cdots a_l}\in \mathscr{F}_V(0,l)$ is a *l-form* if
+	$$\omega_{a_1\cdots a_l} = \omega_{[a_1\cdots a_l]}$$
+
+!!! note "Def: wedge product"
+	$\omega$ is a l-form, $\mu$ is a m-form, the wedge product of $\omega$ and $\mu$ is a $(l + m)-form$ defined as
+	$$(\omega\wedge\mu)_{a_1\cdots a_lb_1\cdots b_m} := \frac{(m+l)!}{l!m!}\omega_{[a_1\cdots a_l}\mu_{b_1\cdots b_m]}$$
+
+If we choose a set of basis, a l-form can be written as 
+$$\omega_{a_1\cdots a_l} = \frac{1}{l!}\omega_{\mu_1\cdots \mu_l}(e^{\mu_1})_{a_1}\wedge\cdots\wedge(e^{\mu_l})_{a_l}$$
+Let $\Lambda(l)$ stands for the linear space of l-forms. It's easy to get the result:
+$$\dim \Lambda(l) = \frac{n!}{l!(n-l)!},\quad l\leq n$$
+$$\Lambda(l) = \{0\},\quad l>n$$
+
+!!! note "Def: exterior differential operator $\mathrm{d}: \Lambda(l)\to\Lambda(l+1)$"
+	$$(\mathrm{d}\omega)_{b a_1\cdots a_l} := (l+1)\nabla_{[b}\omega_{a_1\cdots a_l]}$$
+	$\nabla_b$ is any differential operator.
+
+!!! note "Def: volume element"
+	A $C^0$ and everywhere non-zero n-form field in a n dimensional orientable manifold.
+	With a given metrics $g_{ab}$, we can choose a unique volume element that satisfies
+	$$\varepsilon_{a_1\cdots a_l} = \pm 1(e^{1})_{a_1}\wedge\cdots\wedge(e^{l})_{a_l}$$
+	$$\varepsilon^{a_1\cdots a_l}\varepsilon_{a_1\cdots a_l} = (-1)^s l!$$
+
+!!! note "Def: dual form"
+	$\forall \omega \in \Lambda(l)$, the dual form $^*\omega \in \Lambda(n-l)$ is (\* is called *Hodge star*)
+	$$^*\omega_{a_1\cdots a_l}:=\frac{1}{l!}\omega^{b_1\cdots b_l} \varepsilon_{b_1\cdots b_l a_1\cdots a_{n-l}}$$
+
+For example, in $(\mathbb{R}^3, \delta_{ab})$, $\varepsilon = dx\wedge dy\wedge dz$ satisfies the equation $\varepsilon_{a_1 a_2 a_3} = (dx)_{a_1}\wedge(dy)_{a_2}\wedge(dz)_{a_3}$ and we can calculate $^*\varepsilon_{a_1 a_2 a_3} = \frac{1}{3!}\varepsilon^{b_1 b_2 b_3}\varepsilon_{b_1 b_2 b_3} = 1$.
+
+In momentum space which is $(\mathbb{R}^4, \eta_{ab})$, the orthogonal basis is $(e_0)^{a}, (e_1)^{a}, (e_2)^{a}, (e_3)^{a}$. A 4-vector $p^a$ in this space is
+$$p^{a} = (\mathscr{E}/c,p_x,p_y,p_z) = \mathscr{E}/c(e_0)^{a}+p_x(e_1)^{a}+p_y(e_2)^{a}+p_z(e_3)^{a},$$
+and the volume element is
+$$\varepsilon_{a_1a_2a_3a_4} = (e^{0})_{a_1}\wedge\cdots\wedge(e^{3})_{a_4}$$
+$p_x$ is a function and $(dp_x)_a = \partial_a p_x = (dx^\mu)_a\partial_\mu p_x = (dx^\mu)_a\delta_\mu^{1} = (dx^1)_a = (e^1)_a$ is a 1-form. $dp_x dp_y dp_z$ is a 3-form and satisfies
+$$\begin{align}
+^*(dp_x dp_y dp_z)_b &= \frac{1}{3!}(dp_x dp_y dp_z)^{a_1a_2a_3}\varepsilon_{a_1a_2a_3b} = (-1)^3\frac{1}{3!}(e_1\wedge e_2\wedge e_3)^{a_1a_2a_3}\varepsilon_{ba_1a_2a_3}\\
+&= (-1)^3\frac{1}{3!}(e_1\wedge e_2\wedge e_3)^{a_1a_2a_3}(e^0)_b\wedge (e^1\wedge e^2\wedge e^3)_{a_1a_2a_3} := p_b
+\end{align}$$
+we can calculate
+$$
+\begin{align}
+(e_0)^bp_b &= -\frac{1}{3!}(e_0e_1e_2e_3)^{b[a_1a_2a_3]}\varepsilon_{ba_1a_2a_3} = -\frac{1}{3!}(e_0e_1e_2e_3)^{b[a_1a_2a_3]}(e^0e^1e^2e^3)_{[ba_1a_2a_3]} \\
+&= -\frac{1}{3!}(e_0e_1e_2e_3)^{[ba_1a_2a_3]}(e^0e^1e^2e^3)_{[ba_1a_2a_3]} = -4
+\end{align}
+$$
+This means the $(e_0)^b$ and $p^b$ are two parallel 4-vectors.
