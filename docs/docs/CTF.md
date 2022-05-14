@@ -178,7 +178,7 @@ By analogy with the usual definition of the force, the **force four-vector** is 
 $$g^i = \frac{p^i}{ds} = mc \frac{du^i}{ds}.$$
 
 !!! note "formulas in 4-dimensional form"
-	- interval 
+	- interval
 	$$ds = \sqrt{dx_i dx^i}$$
 	$$\delta(ds) = \frac{\partial(ds)}{\partial(dx^i)} \delta(dx^i) = \frac{dx_i + \delta_{ij}dx^j}{2ds}\delta(dx^i) = \frac{dx_i}{ds}\delta(dx^i)$$
 	 
