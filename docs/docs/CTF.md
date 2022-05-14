@@ -136,7 +136,9 @@ $$\delta(ds) = \frac{\partial(ds)}{\partial(dx^i)} \delta(dx^i) = \frac{dx_i + \
 According to the principle of least action, $\delta S$ must be zero. So we have
 
 $$\delta S = -mc\,\delta\int_{a}^{b}\sqrt{dx_i dx^i} = -mc\int_{a}^{b}\frac{dx_i}{ds}\delta(dx^i) = -mc\int_{a}^{b}u_{i}d\delta x^i = 0$$
+
 $$\Rightarrow \delta S = -mcu_i \delta x^i\Big{|}_a^b + mc\int_a^b \delta x^i \frac{du_i}{ds}ds = 0$$
+
 $$\Rightarrow \frac{du_i}{ds} = 0$$
 
 This means the 4-dimensional velocity of a free particle remains constant.
@@ -177,36 +179,30 @@ $$g^i = \frac{p^i}{ds} = mc \frac{du^i}{ds}.$$
 
 !!! note "formulas in 4-dimensional form"
 	- interval 
-	- 
-	 $$ds = \sqrt{dx_i dx^i}$$
-	 $$\delta(ds) = \frac{\partial(ds)}{\partial(dx^i)} \delta(dx^i) = \frac{dx_i + \delta_{ij}dx^j}{2ds}\delta(dx^i) = \frac{dx_i}{ds}\delta(dx^i)$$
+	$$ds = \sqrt{dx_i dx^i}$$
+	$$\delta(ds) = \frac{\partial(ds)}{\partial(dx^i)} \delta(dx^i) = \frac{dx_i + \delta_{ij}dx^j}{2ds}\delta(dx^i) = \frac{dx_i}{ds}\delta(dx^i)$$
 	 
 	- principle of least action
-	- 
-	 $$\delta S = -mc\,\delta\int_{a}^{b}\sqrt{dx_i dx^i} = -mc\int_{a}^{b}\frac{dx_i}{ds}\delta(dx^i) = -mc\int_{a}^{b}u_{i}d\delta x^i = 0$$
-	 $$\Rightarrow \delta S = -mcu_i \delta x^i\Big{|}_a^b + mc\int_a^b \delta x^i \frac{du_i}{ds}ds = 0$$
-	 $$\Rightarrow \frac{du_i}{ds} = 0$$
+	$$\delta S = -mc\,\delta\int_{a}^{b}\sqrt{dx_i dx^i} = -mc\int_{a}^{b}\frac{dx_i}{ds}\delta(dx^i) = -mc\int_{a}^{b}u_{i}d\delta x^i = 0$$
+	$$\Rightarrow \delta S = -mcu_i \delta x^i\Big{|}_a^b + mc\int_a^b \delta x^i \frac{du_i}{ds}ds = 0$$
+	$$\Rightarrow \frac{du_i}{ds} = 0$$
 	 
 	- the velocity of a free particle remains constant
-	- 
-	  $$\frac{du_i}{ds} = 0$$
+	$$\frac{du_i}{ds} = 0$$
 	  
 	- 4-momentum
-	- 
-	  $$p_i = -\frac{\partial S}{\partial x^i} = (\frac{\mathscr{E}}{c}, -p_x, -p_y, -p_z)$$
-	  $$p^i = (\frac{\mathscr{E}}{c}, p_x, p_y, p_z)$$
+	$$p_i = -\frac{\partial S}{\partial x^i} = (\frac{\mathscr{E}}{c}, -p_x, -p_y, -p_z)$$
+	$$p^i = (\frac{\mathscr{E}}{c}, p_x, p_y, p_z)$$
 	  
 	- 4-dimensional energy-momentum relation
-	- 
-	  $$p_ip^i = m^2c^2$$
+	$$p_ip^i = m^2c^2$$
 	  
 	- 4-dimensional force
-	- 
-	  $$g^i = \frac{p^i}{ds} = mc \frac{du^i}{ds}$$
+	$$g^i = \frac{p^i}{ds} = mc \frac{du^i}{ds}$$
 	  
 	- relativistic Hamilton-Jacobi equation
-	- 
-	  $$g^{ij}\frac{\partial S}{\partial x^i}\frac{\partial S}{\partial x^j} = m^2c^2$$
+	$$g^{ij}\frac{\partial S}{\partial x^i}\frac{\partial S}{\partial x^j} = m^2c^2$$
+
 
 ## Transformation of Distribution Functions
 
