@@ -81,18 +81,14 @@ $$\mathbf{p} = -mc^2 \frac{-2\mathbf{v}/c^2}{2\sqrt{1-v^2/c^2}} = \frac{m\mathbf
 
 Also using the Lagrangian of a free particle, we have
 
-$$
-\mathscr{E} = \frac{m\mathbf{v}}{\sqrt{1-v^2/c^2}}\cdot \mathbf{v} - \left(-mc^2 \sqrt{1-\frac{v^2}{c^2}}\right) = \frac{mc^2(1-v^2/c^2)+mv^2}{\sqrt{1-v^2/c^2}} = \frac{mc^2}{\sqrt{1-v^2/c^2}}.
-$$
+$$\mathscr{E} = \frac{m\mathbf{v}}{\sqrt{1-v^2/c^2}}\cdot \mathbf{v} - \left(-mc^2 \sqrt{1-\frac{v^2}{c^2}}\right) = \frac{mc^2(1-v^2/c^2)+mv^2}{\sqrt{1-v^2/c^2}} = \frac{mc^2}{\sqrt{1-v^2/c^2}}.$$
 
 ^2539ba
 
 For small velocity, we have 
 
-$$
-\mathscr{E} \approx mc^2\left(1-\frac{1}{2}(-\frac{v^2}{c^2})\right)
-= mc^2 + \frac{1}{2}mv^2
-$$
+$$\mathscr{E} \approx mc^2\left(1-\frac{1}{2}(-\frac{v^2}{c^2})\right)
+= mc^2 + \frac{1}{2}mv^2$$
 
 !!! tip "This means the total energy is the kinetic energy plus the static energy."
 
@@ -109,9 +105,11 @@ $$\frac{\mathscr{E}^2}{c^2} = \frac{m^2 c^2}{1-v^2/c^2} = \frac{m^2 (c^2-v^2) + 
 
 !!! note "Def: Hamiltonian function $\mathscr{H}$"
 	
-	The energy written in terms of the momentum, which in this case is $$\mathscr{H} = c\sqrt{p^2 + m^2 c^2}$$
+	The energy written in terms of the momentum, which in this case is 
+	
+	$$\mathscr{H} = c\sqrt{p^2 + m^2 c^2}$$
 
-Also, for low velocities, we have 
+Also, for low velocities, we have
 
 $$\mathscr{H} = c\sqrt{p^2 + m^2 c^2} \approx mc^2 + \frac{p^2}{2m}.$$
 
@@ -236,6 +234,7 @@ $$\omega_{a_1\cdots a_l} = \frac{1}{l!}\omega_{\mu_1\cdots \mu_l}(e^{\mu_1})_{a_
 Let $\Lambda(l)$ stands for the linear space of l-forms. It's easy to get the result:
 
 $$\dim \Lambda(l) = \frac{n!}{l!(n-l)!},\quad l\leq n$$
+
 $$\Lambda(l) = \{0\},\quad l>n$$
 
 !!! note "Def: exterior differential operator $\mathrm{d}: \Lambda(l)\to\Lambda(l+1)$"
