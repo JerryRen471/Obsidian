@@ -16,7 +16,7 @@ tags:
 
 ## The Principle of Least Action
 
- For each mechanical system, there exists a certain integral $S$ called $action$, which has a minimum(or extremum) for the actual motion so that its variation $\delta S$ is zero.
+For each mechanical system, there exists a certain integral $S$ called $action$, which has a minimum(or extremum) for the actual motion so that its variation $\delta S$ is zero.
 
 Consider a free particle: the action of a free particle must not depend on the frame of reference → the action must be Lorentz invariant—that is a scalar → the integrand must be a differential of the first order → the action of a free particle must have the form
 
@@ -61,6 +61,7 @@ and the Lagrangian is
 $$L = -mc^2 \sqrt{1-\frac{v^2}{c^2}}.$$
 
 ## Energy and Momentum
+
 !!! note "Def: Momentum of a particle"
 	
 	$$\mathbf{p} = \frac{\partial L}{\partial \mathbf{v}}$$
@@ -93,6 +94,7 @@ $$\mathscr{E} \approx mc^2\left(1-\frac{1}{2}(-\frac{v^2}{c^2})\right)
 !!! tip "This means the total energy is the kinetic energy plus the static energy."
 
 Although we speak of a "particle", we haven't used the property that it is "elementary". Thus **the formulas are equally applicable to any composite body consisting of many particles**, where by $m$ we mean the total mass of the body, and by $v$ the velocity of its motion as a whole.
+
 !!! attention
 	$\sum{m_\alpha c^2} \neq mc^2$ for the energy $mc^2$ contains both the kinetic energy of the particles and their interaction energy.
 
@@ -178,41 +180,40 @@ By analogy with the usual definition of the force, the **force four-vector** is 
 $$g^i = \frac{p^i}{ds} = mc \frac{du^i}{ds}.$$
 
 !!! note "formulas in 4-dimensional form"
+	
 	- interval
-	$$ds = \sqrt{dx_i dx^i}$$
-	$$\delta(ds) = \frac{\partial(ds)}{\partial(dx^i)} \delta(dx^i) = \frac{dx_i + \delta_{ij}dx^j}{2ds}\delta(dx^i) = \frac{dx_i}{ds}\delta(dx^i)$$
-	 
+	  $$ds = \sqrt{dx_i dx^i}$$
+	  $$\delta(ds) = \frac{\partial(ds)}{\partial(dx^i)} \delta(dx^i) = \frac{dx_i + \delta_{ij}dx^j}{2ds}\delta(dx^i) = \frac{dx_i}{ds}\delta(dx^i)$$
+	
 	- principle of least action
-	$$\delta S = -mc\,\delta\int_{a}^{b}\sqrt{dx_i dx^i} = -mc\int_{a}^{b}\frac{dx_i}{ds}\delta(dx^i) = -mc\int_{a}^{b}u_{i}d\delta x^i = 0$$
-	$$\Rightarrow \delta S = -mcu_i \delta x^i\Big{|}_a^b + mc\int_a^b \delta x^i \frac{du_i}{ds}ds = 0$$
-	$$\Rightarrow \frac{du_i}{ds} = 0$$
-	 
+	  $$\delta S = -mc\,\delta\int_{a}^{b}\sqrt{dx_i dx^i} = -mc\int_{a}^{b}\frac{dx_i}{ds}\delta(dx^i) = -mc\int_{a}^{b}u_{i}d\delta x^i = 0$$
+	  $$\Rightarrow \delta S = -mcu_i \delta x^i\Big{|}_a^b + mc\int_a^b \delta x^i \frac{du_i}{ds}ds = 0$$
+	  $$\Rightarrow \frac{du_i}{ds} = 0$$
+	
 	- the velocity of a free particle remains constant
-	$$\frac{du_i}{ds} = 0$$
-	  
+	  $$\frac{du_i}{ds} = 0$$
+	
 	- 4-momentum
-	$$p_i = -\frac{\partial S}{\partial x^i} = (\frac{\mathscr{E}}{c}, -p_x, -p_y, -p_z)$$
-	$$p^i = (\frac{\mathscr{E}}{c}, p_x, p_y, p_z)$$
-	  
+	  $$p_i = -\frac{\partial S}{\partial x^i} = (\frac{\mathscr{E}}{c}, -p_x, -p_y, -p_z)$$
+	  $$p^i = (\frac{\mathscr{E}}{c}, p_x, p_y, p_z)$$
+	
 	- 4-dimensional energy-momentum relation
-	$$p_ip^i = m^2c^2$$
-	  
+	  $$p_ip^i = m^2c^2$$
+	
 	- 4-dimensional force
-	$$g^i = \frac{p^i}{ds} = mc \frac{du^i}{ds}$$
-	  
+	  $$g^i = \frac{p^i}{ds} = mc \frac{du^i}{ds}$$
+	
 	- relativistic Hamilton-Jacobi equation
-	$$g^{ij}\frac{\partial S}{\partial x^i}\frac{\partial S}{\partial x^j} = m^2c^2$$
-
+	  $$g^{ij}\frac{\partial S}{\partial x^i}\frac{\partial S}{\partial x^j} = m^2c^2$$
 
 ## Transformation of Distribution Functions
 
 !!! tip "Aim: Find the transformation law of distribution function $f(\mathbf{p})$."
 
-
-
-
 ---
+
 ## Differential Form
+
 !!! note "Def: *l-form*"
 	$\omega_{a_1\cdots a_l}\in \mathscr{F}_V(0,l)$ is a *l-form* if
 	
