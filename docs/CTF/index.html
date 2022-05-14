@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <meta content="A cool description" name="description"/>
+  <link href="https://jerryren471.github.io/Obsidian/docs/CTF/" rel="canonical"/>
+  <link href="../../assets/logo/favicons.png" rel="icon"/>
+  <meta content="mkdocs-1.3.0, mkdocs-material-8.2.14" name="generator"/>
+  <title>
+   Chapter 2 Relativistic Mechanics - Jerry's Blog
+  </title>
+  <link href="../../assets/stylesheets/main.3de6f41f.min.css" rel="stylesheet"/>
+  <link href="../../assets/stylesheets/palette.cc9b2e1e.min.css" rel="stylesheet"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css?family=Karla:300,300i,400,400i,700,700i%7CUbuntu+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+  <style>
+   :root{--md-text-font:"Karla";--md-code-font:"Ubuntu Mono"}
+  </style>
+  <link href="../../assets/css/img-grids-floats.css" rel="stylesheet"/>
+  <link href="../../assets/css/utils.css" rel="stylesheet"/>
+  <link href="../../assets/css/custom_attributes.css" rel="stylesheet"/>
+  <link href="../../assets/css/tooltipster.bundle.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+  <script>
+   __md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script>
+   $(document).ready(function() {
+                    $('.link-tooltip').tooltipster();
+                });
+  </script>
+  <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" referrerpolicy="no-referrer" rel="stylesheet"/>
+  <meta content="Chapter 2 Relativistic Mechanics" property="og:title"/>
+  <meta content="Chapter 2 Relativistic Mechanics" name="twitter:title"/>
+  <meta content="A cool description" name="og:description"/>
+  <meta content="A cool description" name="twitter:description"/>
+  <meta content="summary" name="twitter:card"/>
+  <meta content="https://jerryren471.github.io/Obsidian//assets/logo/LOGO_SEO.png" property="og:image"/>
+  <meta content="https://jerryren471.github.io/Obsidian//assets/logo/LOGO_SEO.png" name="twitter:image"/>
+ </head>
+ <body data-md-color-accent="light-blue" data-md-color-primary="teal" data-md-color-scheme="default" dir="ltr">
+  <script>
+   var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])
+  </script>
+  <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+  <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+  <label class="md-overlay" for="__drawer">
+  </label>
+  <div data-md-component="skip">
+   <a class="md-skip" href="#chapter-2-relativistic-mechanics">
+    Skip to content
+   </a>
+  </div>
+  <div data-md-component="announce">
+  </div>
+  <header class="md-header md-header--lifted" data-md-component="header">
+   <nav aria-label="Header" class="md-header__inner md-grid">
+    <a aria-label="Jerry's Blog" class="md-header__button md-logo" data-md-component="logo" href="../.." title="Jerry's Blog">
+     <img alt="logo" src="../../assets/logo/favicons.png"/>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+     <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z">
+      </path>
+     </svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+     <div class="md-header__ellipsis">
+      <div class="md-header__topic">
+       <span class="md-ellipsis">
+        Jerry's Blog
+       </span>
+      </div>
+      <div class="md-header__topic" data-md-component="header-topic">
+       <span class="md-ellipsis">
+        Chapter 2 Relativistic Mechanics
+       </span>
+      </div>
+     </div>
+    </div>
+    <form class="md-header__option" data-md-component="palette">
+     <input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="light-blue" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="teal" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+     <label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+      <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+       <path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z">
+       </path>
+      </svg>
+     </label>
+     <input aria-label="Switch to light mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="blue" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+     <label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+      <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+       <path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z">
+       </path>
+      </svg>
+     </label>
+    </form>
+    <label class="md-header__button md-icon" for="__search">
+     <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z">
+      </path>
+     </svg>
+    </label>
+    <div class="md-search" data-md-component="search" role="dialog">
+     <label class="md-search__overlay" for="__search">
+     </label>
+     <div class="md-search__inner" role="search">
+      <form class="md-search__form" name="search">
+       <input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+       <label class="md-search__icon md-icon" for="__search">
+        <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+         <path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z">
+         </path>
+        </svg>
+        <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+         <path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z">
+         </path>
+        </svg>
+       </label>
+       <nav aria-label="Search" class="md-search__options">
+        <button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" type="reset">
+         <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z">
+          </path>
+         </svg>
+        </button>
+       </nav>
+      </form>
+      <div class="md-search__output">
+       <div class="md-search__scrollwrap" data-md-scrollfix="">
+        <div class="md-search-result" data-md-component="search-result">
+         <div class="md-search-result__meta">
+          Initializing search
+         </div>
+         <ol class="md-search-result__list">
+         </ol>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </nav>
+   <nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+    <div class="md-tabs__inner md-grid">
+     <ul class="md-tabs__list">
+      <li class="md-tabs__item">
+       <a class="md-tabs__link md-tabs__link--active" href="./">
+        Docs
+       </a>
+      </li>
+     </ul>
+    </div>
+   </nav>
+  </header>
+  <div class="md-container" data-md-component="container">
+   <main class="md-main" data-md-component="main">
+    <div class="md-main__inner md-grid">
+     <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+       <div class="md-sidebar__inner">
+        <nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+         <label class="md-nav__title" for="__drawer">
+          <a aria-label="Jerry's Blog" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="Jerry's Blog">
+           <img alt="logo" src="../../assets/logo/favicons.png"/>
+          </a>
+          Jerry's Blog
+         </label>
+         <ul class="md-nav__list" data-md-scrollfix="">
+          <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+           <input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" id="__nav_1" type="checkbox"/>
+           <label class="md-nav__link" for="__nav_1">
+            Docs
+            <span class="md-nav__icon md-icon">
+            </span>
+           </label>
+           <nav aria-label="Docs" class="md-nav" data-md-level="1">
+            <label class="md-nav__title" for="__nav_1">
+             <span class="md-nav__icon md-icon">
+             </span>
+             Docs
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix="">
+             <li class="md-nav__item md-nav__item--active">
+              <input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+              <label class="md-nav__link md-nav__link--active" for="__toc">
+               Chapter 2 Relativistic Mechanics
+               <span class="md-nav__icon md-icon">
+               </span>
+              </label>
+              <a class="md-nav__link md-nav__link--active" href="./">
+               Chapter 2 Relativistic Mechanics
+              </a>
+              <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+               <label class="md-nav__title" for="__toc">
+                <span class="md-nav__icon md-icon">
+                </span>
+                Table of contents
+               </label>
+               <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+                <li class="md-nav__item">
+                 <a class="md-nav__link" href="#the-principle-of-least-action">
+                  The Principle of Least Action
+                 </a>
+                </li>
+                <li class="md-nav__item">
+                 <a class="md-nav__link" href="#energy-and-momentum">
+                  Energy and Momentum
+                 </a>
+                </li>
+                <li class="md-nav__item">
+                 <a class="md-nav__link" href="#transformation-of-distribution-functions">
+                  Transformation of Distribution Functions
+                 </a>
+                </li>
+                <li class="md-nav__item">
+                 <a class="md-nav__link" href="#differential-form">
+                  Differential Form
+                 </a>
+                </li>
+               </ul>
+              </nav>
+             </li>
+            </ul>
+           </nav>
+          </li>
+         </ul>
+        </nav>
+       </div>
+      </div>
+     </div>
+     <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+      <div class="md-sidebar__scrollwrap">
+       <div class="md-sidebar__inner">
+        <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+         <label class="md-nav__title" for="__toc">
+          <span class="md-nav__icon md-icon">
+          </span>
+          Table of contents
+         </label>
+         <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+          <li class="md-nav__item">
+           <a class="md-nav__link" href="#the-principle-of-least-action">
+            The Principle of Least Action
+           </a>
+          </li>
+          <li class="md-nav__item">
+           <a class="md-nav__link" href="#energy-and-momentum">
+            Energy and Momentum
+           </a>
+          </li>
+          <li class="md-nav__item">
+           <a class="md-nav__link" href="#transformation-of-distribution-functions">
+            Transformation of Distribution Functions
+           </a>
+          </li>
+          <li class="md-nav__item">
+           <a class="md-nav__link" href="#differential-form">
+            Differential Form
+           </a>
+          </li>
+         </ul>
+        </nav>
+       </div>
+      </div>
+     </div>
+     <div class="md-content" data-md-component="content">
+      <article class="md-content__inner md-typeset">
+       <h1 id="chapter-2-relativistic-mechanics">
+        Chapter 2 Relativistic Mechanics
+        <a class="headerlink" href="#chapter-2-relativistic-mechanics" title="Permanent link">
+         ¶
+        </a>
+       </h1>
+       <h2 id="the-principle-of-least-action">
+        The Principle of Least Action
+        <a class="headerlink" href="#the-principle-of-least-action" title="Permanent link">
+         ¶
+        </a>
+       </h2>
+       <p>
+        For each mechanical system, there exists a certain integral
+        <span class="arithmatex">
+         \(S\)
+        </span>
+        called
+        <span class="arithmatex">
+         \(action\)
+        </span>
+        , which has a minimum(or extremum) for the actual motion so that its variation
+        <span class="arithmatex">
+         \(\delta S\)
+        </span>
+        is zero.
+       </p>
+       <p>
+        Consider a free particle: the action of a free particle must not depend on the frame of reference → the action must be Lorentz invariant—that is a scalar → the integrand must be a differential of the first order → the action of a free particle must have the form
+       </p>
+       <div class="arithmatex">
+        \[S = -\alpha \int_a^b ds\]
+       </div>
+       <p>
+        where the integral is along the world line and
+        <span class="arithmatex">
+         \(a\)
+        </span>
+        and
+        <span class="arithmatex">
+         \(b\)
+        </span>
+        are two given world points,
+        <span class="arithmatex">
+         \(\alpha\)
+        </span>
+        is some constant that characterizes the particle.
+       </p>
+       <div class="admonition tip">
+        <p class="admonition-title">
+         As we can see in § 3,
+         <span class="arithmatex">
+          \(\int_a^bds\)
+         </span>
+         has a maximum along a straight line, so the constant
+         <span class="arithmatex">
+          \(\alpha\)
+         </span>
+         must be positive.
+        </p>
+       </div>
+       <p>
+        <strong>
+         <em>
+          The action of a free particle has a maximum when the integral path is a straight line between the two given world points.
+         </em>
+        </strong>
+        So we can say the world line of a free particle is a straight line in spacetime.
+       </p>
+       <p>
+        Write the action in the form
+       </p>
+       <div class="arithmatex">
+        \[S = \int_{t_1}^{t_2} Ldt.\]
+       </div>
+       <p>
+        It’s the integral of time.
+        <span class="arithmatex">
+         \(L(t)\)
+        </span>
+        is the
+        <span class="arithmatex">
+         \(Lagrange function\)
+        </span>
+        of the mechanical system.
+       </p>
+       <p>
+        Because the interval in 4-space can be written as
+       </p>
+       <div class="arithmatex">
+        \[ds = c\sqrt{1-\frac{v^2}{c^2}}dt\]
+       </div>
+       <p>
+        so the action becomes
+       </p>
+       <div class="arithmatex">
+        \[S = -\int_{t_1}^{t_2} {\alpha c\sqrt{1-\frac{v^2}{c^2}}dt}\]
+       </div>
+       <p>
+        where
+        <span class="arithmatex">
+         \(v\)
+        </span>
+        is the velocity of the particle. So the Lagrangian for the particle is
+       </p>
+       <div class="arithmatex">
+        \[L = -\alpha c \sqrt{1-\frac{v^2}{c^2}}.\]
+       </div>
+       <p>
+        When the velocity is much smaller than
+        <span class="arithmatex">
+         \(c\)
+        </span>
+        , we should get
+        <span class="arithmatex">
+         \(L = mv^2/2\)
+        </span>
+        . So when
+        <span class="arithmatex">
+         \(c\to \infty\)
+        </span>
+        , we have
+       </p>
+       <div class="arithmatex">
+        \[\lim_{c\to\infty} L = -\alpha c + \frac{\alpha v^2}{2c} \approx \frac{1}{2}mv^2.\]
+       </div>
+       <p>
+        The term
+        <span class="arithmatex">
+         \(\alpha c\)
+        </span>
+        is just a constant and won’t affect the equation of motion, so we can ignore that and have
+        <span class="arithmatex">
+         \(\alpha = mc\)
+        </span>
+        .
+       </p>
+       <p>
+        Thus the action for a free particle is
+       </p>
+       <div class="arithmatex">
+        \[S = -mc\int_a^b ds\]
+       </div>
+       <p>
+        and the Lagrangian is
+       </p>
+       <div class="arithmatex">
+        \[L = -mc^2 \sqrt{1-\frac{v^2}{c^2}}.\]
+       </div>
+       <h2 id="energy-and-momentum">
+        Energy and Momentum
+        <a class="headerlink" href="#energy-and-momentum" title="Permanent link">
+         ¶
+        </a>
+       </h2>
+       <div class="admonition note">
+        <p class="admonition-title">
+         Def: Momentum of a particle
+        </p>
+        <div class="arithmatex">
+         \[\mathbf{p} = \frac{\partial L}{\partial \mathbf{v}}\]
+        </div>
+       </div>
+       <p>
+        Using the Lagrangian of a free particle, we find
+       </p>
+       <div class="arithmatex">
+        \[\mathbf{p} = -mc^2 \frac{-2\mathbf{v}/c^2}{2\sqrt{1-v^2/c^2}} = \frac{m\mathbf{v}}{\sqrt{1-v^2/c^2}}.\]
+       </div>
+       <p>
+        ^9cc1a8
+       </p>
+       <div class="admonition note">
+        <p class="admonition-title">
+         Def: Force acting on the particle
+        </p>
+        <div class="arithmatex">
+         \[\mathbf{F} = \frac{d\mathbf{p}}{dt}\]
+        </div>
+       </div>
+       <div class="admonition note">
+        <p class="admonition-title">
+         Def: Energy of the particle
+        </p>
+        <div class="arithmatex">
+         \[\mathscr{E} = \mathbf{p}\cdot\mathbf{v} - L\]
+        </div>
+       </div>
+       <p>
+        Also using the Lagrangian of a free particle, we have
+       </p>
+       <div class="arithmatex">
+        \[\mathscr{E} = \frac{m\mathbf{v}}{\sqrt{1-v^2/c^2}}\cdot \mathbf{v} - \left(-mc^2 \sqrt{1-\frac{v^2}{c^2}}\right) = \frac{mc^2(1-v^2/c^2)+mv^2}{\sqrt{1-v^2/c^2}} = \frac{mc^2}{\sqrt{1-v^2/c^2}}.\]
+       </div>
+       <p>
+        ^2539ba
+       </p>
+       <p>
+        For small velocity, we have
+       </p>
+       <div class="arithmatex">
+        \[\mathscr{E} \approx mc^2\left(1-\frac{1}{2}(-\frac{v^2}{c^2})\right)
+= mc^2 + \frac{1}{2}mv^2\]
+       </div>
+       <div class="admonition tip">
+        <p class="admonition-title">
+         This means the total energy is the kinetic energy plus the static energy.
+        </p>
+       </div>
+       <p>
+        Although we speak of a “particle”, we haven’t used the property that it is “elementary”. Thus
+        <strong>
+         the formulas are equally applicable to any composite body consisting of many particles
+        </strong>
+        , where by
+        <span class="arithmatex">
+         \(m\)
+        </span>
+        we mean the total mass of the body, and by
+        <span class="arithmatex">
+         \(v\)
+        </span>
+        the velocity of its motion as a whole.
+       </p>
+       <div class="admonition attention">
+        <p class="admonition-title">
+         Attention
+        </p>
+        <p>
+         <span class="arithmatex">
+          \(\sum{m_\alpha c^2} \neq mc^2\)
+         </span>
+         for the energy
+         <span class="arithmatex">
+          \(mc^2\)
+         </span>
+         contains both the kinetic energy of the particles and their interaction energy.
+        </p>
+       </div>
+       <p>
+        Squaring the
+        <a href="./#^2539ba" title="energy">
+         energy
+        </a>
+        and the
+        <a href="./#^9cc1a8" title="momentum">
+         momentum
+        </a>
+        we can get:
+       </p>
+       <div class="arithmatex">
+        \[\frac{\mathscr{E}^2}{c^2} = \frac{m^2 c^2}{1-v^2/c^2} = \frac{m^2 (c^2-v^2) + v^2}{1-v^2/c^2} = m^2 c^2 + \frac{m^2 v^2}{1-v^2/c^2}
+= p^2 + m^2 c^2.\]
+       </div>
+       <p>
+        ^19c0ef
+       </p>
+       <div class="admonition note">
+        <p class="admonition-title">
+         Def: Hamiltonian function
+         <span class="arithmatex">
+          \(\mathscr{H}\)
+         </span>
+        </p>
+        <p>
+         The energy written in terms of the momentum, which in this case is
+        </p>
+        <div class="arithmatex">
+         \[\mathscr{H} = c\sqrt{p^2 + m^2 c^2}\]
+        </div>
+       </div>
+       <p>
+        Also, for low velocities, we have
+       </p>
+       <div class="arithmatex">
+        \[\mathscr{H} = c\sqrt{p^2 + m^2 c^2} \approx mc^2 + \frac{p^2}{2m}.\]
+       </div>
+       <p>
+        Comparing the energy and momentum of a free particle, we get
+       </p>
+       <div class="arithmatex">
+        \[\mathbf{p} = \mathscr{E}\frac{\mathbf{v}}{c^2}.\]
+       </div>
+       <p>
+        For
+        <span class="arithmatex">
+         \(v=c\)
+        </span>
+        , the relation becomes
+        <span class="arithmatex">
+         \({p}=\frac{\mathscr{E}}{c}\)
+        </span>
+        .
+       </p>
+       <div class="admonition faq">
+        <p class="admonition-title">
+         Why a particle with nonzero mass can’t move with the velocity of light?
+        </p>
+        <p>
+         For
+         <span class="arithmatex">
+          \(v=c\)
+         </span>
+         , the momentum and energy of the particle will become infinite.
+         <br/>
+         (
+         <em>
+          But particles with zero mass moving with the velocity of light can exist
+         </em>
+         .)
+        </p>
+       </div>
+       <p>
+        <strong>
+         We can write these formulas in 4-dimensional form.
+        </strong>
+       </p>
+       <p>
+        The interval is
+       </p>
+       <div class="arithmatex">
+        \[ds = \sqrt{dx_i dx^i}\]
+       </div>
+       <p>
+        so the variation of the
+        <span class="arithmatex">
+         \(ds\)
+        </span>
+        is
+       </p>
+       <div class="arithmatex">
+        \[\delta(ds) = \frac{\partial(ds)}{\partial(dx^i)} \delta(dx^i) = \frac{dx_i + \delta_{ij}dx^j}{2ds}\delta(dx^i) = \frac{dx_i}{ds}\delta(dx^i).\]
+       </div>
+       <p>
+        According to the principle of least action,
+        <span class="arithmatex">
+         \(\delta S\)
+        </span>
+        must be zero. So we have
+       </p>
+       <div class="arithmatex">
+        \[\delta S = -mc\,\delta\int_{a}^{b}\sqrt{dx_i dx^i} = -mc\int_{a}^{b}\frac{dx_i}{ds}\delta(dx^i) = -mc\int_{a}^{b}u_{i}d\delta x^i = 0\]
+       </div>
+       <div class="arithmatex">
+        \[\Rightarrow \delta S = -mcu_i \delta x^i\Big{|}_a^b + mc\int_a^b \delta x^i \frac{du_i}{ds}ds = 0\]
+       </div>
+       <div class="arithmatex">
+        \[\Rightarrow \frac{du_i}{ds} = 0\]
+       </div>
+       <p>
+        This means the 4-dimensional velocity of a free particle remains constant.
+       </p>
+       <p>
+        To write the variation of action as a function of the coordinates, we keep point
+        <span class="arithmatex">
+         \(a\)
+        </span>
+        fixed and make point
+        <span class="arithmatex">
+         \(b\)
+        </span>
+        the variable, which can just move in the trajectories determined by equation
+        <span class="arithmatex">
+         \(\frac{du_i}{ds} = 0\)
+        </span>
+        so the second part of
+        <span class="arithmatex">
+         \(\delta S\)
+        </span>
+        is always zero. And there is no harm to let
+        <span class="arithmatex">
+         \((\delta x^i)_a\)
+        </span>
+        be zero. In this case, we finally get the variation of action as a function of coordinates:
+       </p>
+       <div class="arithmatex">
+        \[\delta S = -mcu_i\delta x^i.\]
+       </div>
+       <p>
+        The 4-vector
+       </p>
+       <div class="arithmatex">
+        \[p_i = -\frac{\partial S}{\partial x^i}\]
+       </div>
+       <p>
+        is called
+        <strong>
+         momentum 4-vector (4-momentum)
+        </strong>
+        . Because we have
+        <span class="arithmatex">
+         \(\partial S/\partial x = p_x\)
+        </span>
+        and
+        <span class="arithmatex">
+         \(-\partial S/ \partial t = \mathscr{E}\)
+        </span>
+        , the components 4-momentum are
+       </p>
+       <div class="arithmatex">
+        \[p_i = (\mathscr{E}/c, -\mathbf{p}),\]
+       </div>
+       <p>
+        and the covariant components are
+       </p>
+       <div class="arithmatex">
+        \[p^i = (\mathscr{E}/c, \mathbf{p}).\]
+       </div>
+       <p>
+        From
+        <span class="arithmatex">
+         \(\delta S = -mcu_i\delta x^i\)
+        </span>
+        and
+        <span class="arithmatex">
+         \(p_i = -\frac{\partial S}{\partial x^i}\)
+        </span>
+        , we can see
+       </p>
+       <div class="arithmatex">
+        \[p^i = mcu^i.\]
+       </div>
+       <p>
+        Once we get the 4-velocity of the free particle, we can instantly write down its energy and 3-momentum. And we now get the transformation formulas of energy and 3-momentum, which are directly given by the 4-vector transformation formulas:
+       </p>
+       <div class="arithmatex">
+        \[p_x = \gamma(p_x'+\beta \frac{\mathscr{E'}}{c}), \quad p_y = p_y', \quad p_z = p_z', \quad \frac{\mathscr{E}}{c} = \gamma(\frac{\mathscr{E}'}{c}+\beta p_x')\]
+       </div>
+       <p>
+        where
+       </p>
+       <div class="arithmatex">
+        \[\beta = \frac{V}{c},\quad \gamma = \frac{1}{\sqrt{1-\beta^2}}.\]
+       </div>
+       <p>
+        Using the identity of
+        <span class="arithmatex">
+         \(u_iu^i = 1\)
+        </span>
+        , we have
+        <span class="arithmatex">
+         \(p_ip^i = m^2c^2\)
+        </span>
+        . This is the same as the
+        <a href="./#^19c0ef" title="energy-momentum relation">
+         energy-momentum relation
+        </a>
+        .
+       </p>
+       <p>
+        By analogy with the usual definition of the force, the
+        <strong>
+         force four-vector
+        </strong>
+        is defined as the derivative:
+       </p>
+       <div class="arithmatex">
+        \[g^i = \frac{p^i}{ds} = mc \frac{du^i}{ds}.\]
+       </div>
+       <div class="admonition note">
+        <p class="admonition-title">
+         formulas in 4-dimensional form
+        </p>
+        <ul>
+         <li>
+          <p>
+           interval
+           <br/>
+           <span class="arithmatex">
+            \(
+            <span class="arithmatex">
+             \(ds = \sqrt{dx_i dx^i}\)
+            </span>
+            \)
+           </span>
+           <br/>
+           <span class="arithmatex">
+            \(
+            <span class="arithmatex">
+             \(\delta(ds) = \frac{\partial(ds)}{\partial(dx^i)} \delta(dx^i) = \frac{dx_i + \delta_{ij}dx^j}{2ds}\delta(dx^i) = \frac{dx_i}{ds}\delta(dx^i)\)
+            </span>
+            \)
+           </span>
+          </p>
+         </li>
+         <li>
+          <p>
+           principle of least action
+           <br/>
+           <span class="arithmatex">
+            \(
+            <span class="arithmatex">
+             \(\delta S = -mc\,\delta\int_{a}^{b}\sqrt{dx_i dx^i} = -mc\int_{a}^{b}\frac{dx_i}{ds}\delta(dx^i) = -mc\int_{a}^{b}u_{i}d\delta x^i = 0\)
+            </span>
+            \)
+           </span>
+           <br/>
+           <span class="arithmatex">
+            \(
+            <span class="arithmatex">
+             \(\Rightarrow \delta S = -mcu_i \delta x^i\Big{|}_a^b + mc\int_a^b \delta x^i \frac{du_i}{ds}ds = 0\)
+            </span>
+            \)
+           </span>
+           <br/>
+           <span class="arithmatex">
+            \(
+            <span class="arithmatex">
+             \(\Rightarrow \frac{du_i}{ds} = 0\)
+            </span>
+            \)
+           </span>
+          </p>
+         </li>
+         <li>
+          <p>
+           the velocity of a free particle remains constant
+           <br/>
+           <span class="arithmatex">
+            \(
+            <span class="arithmatex">
+             \(\frac{du_i}{ds} = 0\)
+            </span>
+            \)
+           </span>
+          </p>
+         </li>
+         <li>
+          <p>
+           4-momentum
+           <br/>
+           <span class="arithmatex">
+            \(
+            <span class="arithmatex">
+             \(p_i = -\frac{\partial S}{\partial x^i} = (\frac{\mathscr{E}}{c}, -p_x, -p_y, -p_z)\)
+            </span>
+            \)
+           </span>
+           <br/>
+           <span class="arithmatex">
+            \(
+            <span class="arithmatex">
+             \(p^i = (\frac{\mathscr{E}}{c}, p_x, p_y, p_z)\)
+            </span>
+            \)
+           </span>
+          </p>
+         </li>
+         <li>
+          <p>
+           4-dimensional energy-momentum relation
+           <br/>
+           <span class="arithmatex">
+            \(
+            <span class="arithmatex">
+             \(p_ip^i = m^2c^2\)
+            </span>
+            \)
+           </span>
+          </p>
+         </li>
+         <li>
+          <p>
+           4-dimensional force
+           <br/>
+           <span class="arithmatex">
+            \(
+            <span class="arithmatex">
+             \(g^i = \frac{p^i}{ds} = mc \frac{du^i}{ds}\)
+            </span>
+            \)
+           </span>
+          </p>
+         </li>
+         <li>
+          <p>
+           relativistic Hamilton-Jacobi equation
+           <br/>
+           <span class="arithmatex">
+            \(
+            <span class="arithmatex">
+             \(g^{ij}\frac{\partial S}{\partial x^i}\frac{\partial S}{\partial x^j} = m^2c^2\)
+            </span>
+            \)
+           </span>
+          </p>
+         </li>
+        </ul>
+       </div>
+       <h2 id="transformation-of-distribution-functions">
+        Transformation of Distribution Functions
+        <a class="headerlink" href="#transformation-of-distribution-functions" title="Permanent link">
+         ¶
+        </a>
+       </h2>
+       <div class="admonition tip">
+        <p class="admonition-title">
+         Aim: Find the transformation law of distribution function
+         <span class="arithmatex">
+          \(f(\mathbf{p})\)
+         </span>
+         .
+        </p>
+       </div>
+       <hr/>
+       <h2 id="differential-form">
+        Differential Form
+        <a class="headerlink" href="#differential-form" title="Permanent link">
+         ¶
+        </a>
+       </h2>
+       <div class="admonition note">
+        <p class="admonition-title">
+         Def:
+         <em>
+          l-form
+         </em>
+        </p>
+        <p>
+         <span class="arithmatex">
+          \(\omega_{a_1\cdots a_l}\in \mathscr{F}_V(0,l)\)
+         </span>
+         is a
+         <em>
+          l-form
+         </em>
+         if
+        </p>
+        <div class="arithmatex">
+         \[\omega_{a_1\cdots a_l} = \omega_{[a_1\cdots a_l]}\]
+        </div>
+       </div>
+       <div class="admonition note">
+        <p class="admonition-title">
+         Def: wedge product
+        </p>
+        <p>
+         <span class="arithmatex">
+          \(\omega\)
+         </span>
+         is a l-form,
+         <span class="arithmatex">
+          \(\mu\)
+         </span>
+         is a m-form, the wedge product of
+         <span class="arithmatex">
+          \(\omega\)
+         </span>
+         and
+         <span class="arithmatex">
+          \(\mu\)
+         </span>
+         is a
+         <span class="arithmatex">
+          \((l + m)-form\)
+         </span>
+         defined as
+        </p>
+        <div class="arithmatex">
+         \[(\omega\wedge\mu)_{a_1\cdots a_lb_1\cdots b_m} := \frac{(m+l)!}{l!m!}\omega_{[a_1\cdots a_l}\mu_{b_1\cdots b_m]}\]
+        </div>
+       </div>
+       <p>
+        If we choose a set of basis, a l-form can be written as
+       </p>
+       <div class="arithmatex">
+        \[\omega_{a_1\cdots a_l} = \frac{1}{l!}\omega_{\mu_1\cdots \mu_l}(e^{\mu_1})_{a_1}\wedge\cdots\wedge(e^{\mu_l})_{a_l}\]
+       </div>
+       <p>
+        Let
+        <span class="arithmatex">
+         \(\Lambda(l)\)
+        </span>
+        stands for the linear space of l-forms. It’s easy to get the result:
+       </p>
+       <div class="arithmatex">
+        \[\dim \Lambda(l) = \frac{n!}{l!(n-l)!},\quad l\leq n\]
+       </div>
+       <div class="arithmatex">
+        \[\Lambda(l) = \{0\},\quad l&gt;n\]
+       </div>
+       <div class="admonition note">
+        <p class="admonition-title">
+         Def: exterior differential operator
+         <span class="arithmatex">
+          \(\mathrm{d}: \Lambda(l)\to\Lambda(l+1)\)
+         </span>
+        </p>
+        <div class="arithmatex">
+         \[(\mathrm{d}\omega)_{b a_1\cdots a_l} := (l+1)\nabla_{[b}\omega_{a_1\cdots a_l]}\]
+        </div>
+        <p>
+         <span class="arithmatex">
+          \(\nabla_b\)
+         </span>
+         is any differential operator.
+        </p>
+       </div>
+       <div class="admonition note">
+        <p class="admonition-title">
+         Def: volume element
+        </p>
+        <p>
+         A
+         <span class="arithmatex">
+          \(C^0\)
+         </span>
+         and everywhere non-zero n-form field in a n dimensional orientable manifold.
+         <br/>
+         With a given metrics
+         <span class="arithmatex">
+          \(g_{ab}\)
+         </span>
+         , we can choose a unique volume element that satisfies
+        </p>
+        <div class="arithmatex">
+         \[\varepsilon_{a_1\cdots a_l} = \pm 1(e^{1})_{a_1}\wedge\cdots\wedge(e^{l})_{a_l}\]
+        </div>
+        <div class="arithmatex">
+         \[\varepsilon^{a_1\cdots a_l}\varepsilon_{a_1\cdots a_l} = (-1)^s l!\]
+        </div>
+       </div>
+       <div class="admonition note">
+        <p class="admonition-title">
+         Def: dual form
+        </p>
+        <p>
+         <span class="arithmatex">
+          \(\forall \omega \in \Lambda(l)\)
+         </span>
+         , the dual form
+         <span class="arithmatex">
+          \(^*\omega \in \Lambda(n-l)\)
+         </span>
+         is (* is called
+         <em>
+          Hodge star
+         </em>
+         )
+        </p>
+        <div class="arithmatex">
+         \[^*\omega_{a_1\cdots a_l}:=\frac{1}{l!}\omega^{b_1\cdots b_l} \varepsilon_{b_1\cdots b_l a_1\cdots a_{n-l}}\]
+        </div>
+       </div>
+       <p>
+        For example, in
+        <span class="arithmatex">
+         \((\mathbb{R}^3, \delta_{ab})\)
+        </span>
+        ,
+        <span class="arithmatex">
+         \(\varepsilon = dx\wedge dy\wedge dz\)
+        </span>
+        satisfies the equation
+        <span class="arithmatex">
+         \(\varepsilon_{a_1 a_2 a_3} = (dx)_{a_1}\wedge(dy)_{a_2}\wedge(dz)_{a_3}\)
+        </span>
+        and we can calculate
+        <span class="arithmatex">
+         \(^*\varepsilon_{a_1 a_2 a_3} = \frac{1}{3!}\varepsilon^{b_1 b_2 b_3}\varepsilon_{b_1 b_2 b_3} = 1\)
+        </span>
+        .
+       </p>
+       <p>
+        In momentum space which is
+        <span class="arithmatex">
+         \((\mathbb{R}^4, \eta_{ab})\)
+        </span>
+        , the orthogonal basis is
+        <span class="arithmatex">
+         \((e_0)^{a}, (e_1)^{a}, (e_2)^{a}, (e_3)^{a}\)
+        </span>
+        . A 4-vector
+        <span class="arithmatex">
+         \(p^a\)
+        </span>
+        in this space is
+       </p>
+       <div class="arithmatex">
+        \[p^{a} = (\mathscr{E}/c,p_x,p_y,p_z) = \mathscr{E}/c(e_0)^{a}+p_x(e_1)^{a}+p_y(e_2)^{a}+p_z(e_3)^{a},\]
+       </div>
+       <p>
+        and the volume element is
+       </p>
+       <div class="arithmatex">
+        \[\varepsilon_{a_1a_2a_3a_4} = (e^{0})_{a_1}\wedge\cdots\wedge(e^{3})_{a_4}\]
+       </div>
+       <p>
+        <span class="arithmatex">
+         \(p_x\)
+        </span>
+        is a function and
+        <span class="arithmatex">
+         \((dp_x)_a = \partial_a p_x = (dx^\mu)_a\partial_\mu p_x = (dx^\mu)_a\delta_\mu^{1} = (dx^1)_a = (e^1)_a\)
+        </span>
+        is a 1-form.
+        <span class="arithmatex">
+         \(dp_x dp_y dp_z\)
+        </span>
+        is a 3-form and satisfies
+       </p>
+       <div class="arithmatex">
+        \[\begin{align}
+^*(dp_x dp_y dp_z)_b &amp;= \frac{1}{3!}(dp_x dp_y dp_z)^{a_1a_2a_3}\varepsilon_{a_1a_2a_3b} = (-1)^3\frac{1}{3!}(e_1\wedge e_2\wedge e_3)^{a_1a_2a_3}\varepsilon_{ba_1a_2a_3}\\
+&amp;= (-1)^3\frac{1}{3!}(e_1\wedge e_2\wedge e_3)^{a_1a_2a_3}(e^0)_b\wedge (e^1\wedge e^2\wedge e^3)_{a_1a_2a_3} := p_b
+\end{align}\]
+       </div>
+       <p>
+        we can calculate
+       </p>
+       <div class="arithmatex">
+        \[\begin{align}
+(e_0)^bp_b &amp;= -\frac{1}{3!}(e_0e_1e_2e_3)^{b[a_1a_2a_3]}\varepsilon_{ba_1a_2a_3} = -\frac{1}{3!}(e_0e_1e_2e_3)^{b[a_1a_2a_3]}(e^0e^1e^2e^3)_{[ba_1a_2a_3]} \\
+&amp;= -\frac{1}{3!}(e_0e_1e_2e_3)^{[ba_1a_2a_3]}(e^0e^1e^2e^3)_{[ba_1a_2a_3]} = -4
+\end{align}\]
+       </div>
+       <p>
+        This means the
+        <span class="arithmatex">
+         \((e_0)^b\)
+        </span>
+        and
+        <span class="arithmatex">
+         \(p^b\)
+        </span>
+        are two parallel 4-vectors.
+       </p>
+      </article>
+     </div>
+    </div>
+    <a class="md-top md-icon" data-md-component="top" data-md-state="hidden" href="#">
+     <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z">
+      </path>
+     </svg>
+     Back to top
+    </a>
+   </main>
+   <footer class="md-footer">
+    <div class="md-footer-meta md-typeset">
+     <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+      </div>
+     </div>
+    </div>
+   </footer>
+  </div>
+  <div class="md-dialog" data-md-component="dialog">
+   <div class="md-dialog__inner md-typeset">
+   </div>
+  </div>
+  <script id="__config" type="application/json">
+   {"base": "../..", "features": ["navigation.indexes", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.expand"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}
+  </script>
+  <script src="../../assets/javascripts/bundle.c2e1ee47.min.js">
+  </script>
+  <script src="../../assets/js/mathjax.js">
+  </script>
+  <script src="../../assets/js/utils.js">
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+  <script src="../../assets/js/tooltipster.bundle.js">
+  </script>
+ </body>
+</html>
