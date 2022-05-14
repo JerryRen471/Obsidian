@@ -201,15 +201,15 @@ $$p^{a} = (\mathscr{E}/c,p_x,p_y,p_z) = \mathscr{E}/c(e_0)^{a}+p_x(e_1)^{a}+p_y(
 and the volume element is
 $$\varepsilon_{a_1a_2a_3a_4} = (e^{0})_{a_1}\wedge\cdots\wedge(e^{3})_{a_4}$$
 $p_x$ is a function and $(dp_x)_a = \partial_a p_x = (dx^\mu)_a\partial_\mu p_x = (dx^\mu)_a\delta_\mu^{1} = (dx^1)_a = (e^1)_a$ is a 1-form. $dp_x dp_y dp_z$ is a 3-form and satisfies
+
 $$\begin{align}
 ^*(dp_x dp_y dp_z)_b &= \frac{1}{3!}(dp_x dp_y dp_z)^{a_1a_2a_3}\varepsilon_{a_1a_2a_3b} = (-1)^3\frac{1}{3!}(e_1\wedge e_2\wedge e_3)^{a_1a_2a_3}\varepsilon_{ba_1a_2a_3}\\
 &= (-1)^3\frac{1}{3!}(e_1\wedge e_2\wedge e_3)^{a_1a_2a_3}(e^0)_b\wedge (e^1\wedge e^2\wedge e^3)_{a_1a_2a_3} := p_b
 \end{align}$$
+
 we can calculate
-$$
-\begin{align}
+$$\begin{align}
 (e_0)^bp_b &= -\frac{1}{3!}(e_0e_1e_2e_3)^{b[a_1a_2a_3]}\varepsilon_{ba_1a_2a_3} = -\frac{1}{3!}(e_0e_1e_2e_3)^{b[a_1a_2a_3]}(e^0e^1e^2e^3)_{[ba_1a_2a_3]} \\
 &= -\frac{1}{3!}(e_0e_1e_2e_3)^{[ba_1a_2a_3]}(e^0e^1e^2e^3)_{[ba_1a_2a_3]} = -4
-\end{align}
-$$
+\end{align}$$
 This means the $(e_0)^b$ and $p^b$ are two parallel 4-vectors.
